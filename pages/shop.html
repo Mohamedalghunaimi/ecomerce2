@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shope</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.7-dist/bootstrap-5.3.7-dist/css/bootstrap.min.css"  integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header  class="z-3 bg-white shadow-sm position-sticky top-0 left-0 ">
+        <nav class="d-none d-md-flex container py-3 d-flex justify-content-between align-items-center">
+            <div class="logo  ">
+                <a href="../index.html">
+                <img src="../assets/logo.svg" alt="" />
+                </a>
+            </div>
+            <ul class="d-flex align-items-center   gap-3 text-capitalize">
+                <li>
+                    <a href="../index.html">home</a>
+                </li>
+                <li><a href="/pages/shop.html">shope</a></li>
+                <li><a href="/pages/about.html">about us</a></li>
+                <li><a  id="cart" href="/pages/cart.html"></a> </li>
+            </ul>
+            <div>
+                <button id="logout" class="  bg-warning text-white text-capitalize px-3 py-2 rounded-5">
+                    logout
+                </button>
+            </div>
+        </nav>
+        <nav  class="d-flex d-md-none container py-3 d-flex justify-content-between align-items-center position-relative">
+            <div class="logo">
+                <img src="../assets/logo.svg" alt="" />
+            </div>
+            <div>
+                <div id="menu-icon1" style="cursor: pointer;"><i class="fa-solid fa-bars"></i></div>
+                <ul id="drop1" class=" d-none shadow-sm" >
+                    <li>
+                    <a href="../index.html">home</a>
+                    </li>
+                    <li><a href="/pages/shop.html">shope</a></li>
+                    <li><a href="/pages/about.html">about us</a></li>
+                <li><a  id="cart" href="/pages/cart.html"></a> </li>
+                    <li id="logout1">logout</li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <div>
+      <div class="title">
+        <h1 class=" text-capitalize" style="width: fit-content; margin: 50px auto;">all products</h1>
+      </div>
+      <div id="shop-container" class=" d-flex flex-wrap justify-content-between gap-4 my-5 container">
+
+      </div>
+      
+    </div>
+    <footer   style="margin-top: 100px !important;"  class=" my-5" >
+        <div class="container  d-flex flex-md-row flex-column p-2   justify-content-between flex-wrap">
+            <div style="max-width: 600px;">
+                <img src="../assets/logo.svg" alt="" />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae illo saepe alias illum voluptate dolorum placeat, quasi molestiae necessitatibus sed consequatur quod doloribus adipisci numquam magni corporis aperiam, quo iure.</p>
+            </div>
+            <ul class=" text-capitalize">
+                <li class=" fw-bold  mb-2 fs-4">company</li>
+                <li>
+                    <a href="../index.html">home</a>
+                </li>
+                <li>
+                    <a href="/pages/about.html">about us</a>
+                </li>
+                <li>
+                    <a href="#">contact us</a>
+                </li>
+                <li>
+                    <a href="#">privacy policy</a>
+                </li>
+            </ul>
+            <ul class=" text-capitalize">
+                <li  class=" fw-bold  mb-2 fs-4">get in touch</li>
+                <li>+1-123-456</li>
+                <li>mohammed@gamil.com</li>
+            </ul>
+
+        </div>
+        <div class="text-center text-capitalize py-3" style="border-top: 1px solid rgba(0, 0, 0, 0.3);">
+            copyright 2025 &copy; mohammed nabil.dev .All rights reversed
+
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./bootstrap-5.3.7-dist/bootstrap-5.3.7-dist/js/bootstrap.min.js" ></script>
+    <script src="../index.js"></script>
+    <script src="../shop.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none !important;
+    box-sizing: border-box;
+    border:none;
+    
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+
+}
+.swal2-actions {
+    display: flexbox;
+    gap: 5px;
+}
+.bg-img {
+    background-image:url("../images/concept-online-shopping-business_220873-15479.avif") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.bg-img::after{
+    content: " ";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 , 0 ,0 ,0.4);
+    z-index: -1;
+
+
+}
+ html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+/*
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }*/
+.title {
+    h1 {
+        position: relative;
+        padding-bottom: 10px;
+    }
+    h1::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left:50%;
+        transform: translateX(-50%);
+        width: 130px;
+        height: 3px;
+        border-radius: 10px;
+ 
+        background-color: brown;
+    }
+}
+.parent div {
+    transition: 0.3s;
+    cursor: pointer;
+}
+.parent:hover div {
+    background-color: rgba(0 , 0 ,0 ,0.35);
+}
+p {
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFA500; 
+  border-radius: 10px;
+}
+
+#drop,#drop1,#drop2,#drop3,#drop4{
+    position: absolute;
+    bottom: 0px;
+    left:0;
+    transform: translateY(100%);
+    width: 100%;
+    text-transform: capitalize;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    li {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    li:hover {
+        margin-left: 5px;
+    }
+}
+
