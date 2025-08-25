@@ -145,7 +145,7 @@ let  productsDummyData = [
   }
 ]
 if(!localStorage.getItem("email")) {
-    window.location.replace("/pages/login.html")
+    window.location.replace("../pages/login.html")
 
 }
 const logoutButton = document.getElementById("logout")
@@ -217,7 +217,7 @@ swalWithBootstrapButtons.fire({
       icon: "success"
     });*/
     localStorage.removeItem("email")
-    window.location.replace("/pages/login.html")
+    window.location.replace("../pages/login.html")
   } else if (
     /* Read more about handling dismissals below */
     result.dismiss === Swal.DismissReason.cancel
@@ -300,4 +300,5 @@ menu_icon.addEventListener("click",()=> {
 })
 /*---------------------------------------------------*/
 const cartA = document.querySelectorAll("#cart")
+
 cartA.forEach((item)=> item.innerHTML = `cart(${JSON.parse(localStorage.getItem("cart")).length})`)
