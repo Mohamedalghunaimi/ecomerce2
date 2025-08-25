@@ -8,4 +8,5 @@ menu_icon4.addEventListener("click",()=> {
 })
 /*---------------------*/
 const cartB = document.querySelectorAll("#cart")
+
 cartB.forEach((item)=> item.innerHTML = `cart(${JSON.parse(localStorage.getItem("cart")).length})`)
